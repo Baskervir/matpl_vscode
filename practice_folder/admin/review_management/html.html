@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰 관리 페이지</title>
+    <link rel="stylesheet" href="/matpl/review_management/style.css">
+</head>
+<body>
+    <div class="comment-section">
+        <h3>리뷰 관리</h3>
+        <select class="restaurant_name">
+        <option value="restaurant_1">철수 스테이크 홍대점</option>
+      </select>
+        <!-- 기존 댓글 목록 -->
+        <div class="comment-list">
+          <div class="comment">
+            <div class="comment-header">
+              <img src="https://via.placeholder.com/20" alt="프로필" class="profile-pic">
+              <span class="username">basic_user1</span>
+              <span class="rating"><div class="rating">
+                <span class="star-filled"></span>
+                <span class="star-filled"></span>
+                <span class="star-filled"></span>
+                <span class="star-filled"></span>
+                <span class="star"></span>
+              </div></span>
+              <span class="review-count">리뷰 수: 10</span>
+              <span class="follower-count">팔로워 수: 200</span>
+            </div>
+            <p class="comment-content">이 음식점 정말 좋아요! 분위기도 좋고 음식도 맛있어요. 서비스도 훌륭합니다!</p>
+            <div class="recomment">
+                <div class="recomment-header">
+                    <img src="#" alt="#">
+                    <span class="username">사장님</span>
+                </div>
+                <div class="recomment-content">
+                    <p>항상 이용해 주셔서 감사합니다.</p>
+                </div>
+                <div class="recomment-manage">
+                    <button type="submit" class="edit-recomment">수정</button>
+                    <button type="submit" class="delete-recomment">삭제</button>
+                </div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="https://via.placeholder.com/20" alt="프로필" class="profile-pic">
+              <span class="username">basic_user2</span>
+              <span class="rating"><span class="star-filled"></span>
+              <span class="star-filled"></span>
+              <span class="star-filled"></span>
+              <span class="star-filled"></span>
+              <span class="star"></span></span>
+              <span class="review-count">리뷰 수: 5</span>
+              <span class="follower-count">팔로워 수: 50</span>
+            </div>
+            <p class="comment-content">음식은 괜찮았는데 대기 시간이 너무 길었어요. 개선이 필요합니다.</p>
+            <div class="comment-actions">
+              <button class="edit-comment">댓글 작성</button>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-header">
+              <img src="https://via.placeholder.com/20" alt="프로필" class="profile-pic">
+              <span class="username">basic_user3</span>
+              <span class="rating"><span class="star-filled"></span>
+              <span class="star-filled"></span>
+              <span class="star-filled"></span>
+              <span class="star-filled"></span>
+              <span class="star-filled"></span>
+              </span>
+              <span class="review-count">리뷰 수: 199</span>
+              <span class="follower-count">팔로워 수: 27</span>
+            </div>
+            <p class="comment-content">댓글 샘플입니다.</p>
+            <div>
+                <input type="text" class="rereview">
+                <button type="submit" class="regist_rereview">작성하기</button>
+            </div>
+          </div>
+          <!-- 다른 댓글들... -->
+        </div>
+      </div>
+      
+</body>
+</html>

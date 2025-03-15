@@ -1,0 +1,39 @@
+.modal {
+    border-radius: 15px;
+    width: 800px;
+    display: flex;
+    background-color: rgb(224, 224, 224);
+}
+
+.signup_container, .login_contailer {
+    width: 240px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    justify-content: center;
+    border-right: 1px solid brown;
+}
+
+.login_contailer {
+    height: 180px;
+}
+
+div > input {
+    height: 30px;
+    width: 100%;
+    margin: 2px;
+}
+
+button {
+    justify-self: end;
+    text-align: flex-end;
+    width: 80px;
+    background-color: rgb(145, 196, 255);
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box; /* 모든 요소에 대해 box-sizing을 border-box로 설정 */
+  }

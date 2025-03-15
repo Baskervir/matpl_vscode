@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Example</title>
+  <!-- <style>
+    /* 모달 기본 스타일 */
+    .modal {
+      display: none; /* 기본적으로 숨겨짐 */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    
+    /* 배경 흐림 효과 */
+    .modal-overlay {
+      display: none; /* 기본적으로 숨겨짐 */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* 반투명 검정 배경 */
+      z-index: 999;
+    }
+
+    /* 모달 열기 버튼 스타일 */
+    .open-modal {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* 모달 닫기 버튼 스타일 */
+    .close-modal {
+      padding: 5px 10px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style> -->
+</head>
+<body>
+
+  <!-- 열기 버튼 -->
+  <button class="open-modal">Open Modal</button>
+
+  <!-- 모달 배경 -->
+  <div class="modal-overlay"></div>
+
+  <!-- 모달 -->
+  <div class="modal">
+    <h2>모달 연습창</h2>
+    <p>모달 샘플 연습창 입니다.</p>
+    <button class="close-modal">닫기</button>
+  </div>
+
+  <script>
+    // 모달 열기 버튼
+    const openModalBtn = document.querySelector('.open-modal');
+    // 모달 닫기 버튼
+    const closeModalBtn = document.querySelector('.close-modal');
+    // 모달
+    const modal = document.querySelector('.modal');
+    // 모달 배경
+    const modalOverlay = document.querySelector('.modal-overlay');
+
+    // 모달 열기
+    openModalBtn.addEventListener('click', function() {
+      modal.style.display = 'block';
+      modalOverlay.style.display = 'block';
+    });
+
+    // 모달 닫기
+    closeModalBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+    });
+
+    // 배경 클릭 시 모달 닫기
+    modalOverlay.addEventListener('click', function() {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
+
+
+<!-- // 모달 열기 버튼
+const openModalBtn = document.getElementById('open-modal');
+const closeModalBtn = document.getElementById('close-modal');
+const modal = document.getElementById('modal');
+const modalOverlay = document.getElementById('modal-overlay');
+const modalIframe = document.getElementById('modal-iframe');
+
+// 모달을 열기 위한 이벤트 리스너
+openModalBtn.addEventListener('click', function() {
+  modalOverlay.style.display = 'block'; // 모달 배경 띄우기
+  modalIframe.src = 'https://example.com'; // iframe에 띄울 페이지 설정
+});
+
+// 모달을 닫기 위한 이벤트 리스너
+closeModalBtn.addEventListener('click', function() {
+  modalOverlay.style.display = 'none'; // 모달 배경 숨기기
+  modalIframe.src = ''; // iframe src 비우기
+}); -->

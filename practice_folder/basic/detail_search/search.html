@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음식점 검색</title>
+    <link rel="stylesheet" href="/matpl/detail_search/style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>음식점 상세 검색</h1>
+
+        <div class="search-box">
+            <div class="search-category">
+                <label for="region">지역</label>
+                <select id="region" name="region">
+                    <option value="seoul">서울</option>
+                    <option value="busan">부산</option>
+                    <option value="daegu">대구</option>
+                    <option value="incheon">인천</option>
+                </select>
+            </div>
+            
+            <div class="search-category">
+                <label for="category">카테고리</label>
+                <select id="category" name="category">
+                    <option value="korean">한식</option>
+                    <option value="japanese">일식</option>
+                    <option value="chinese">중식</option>
+                    <option value="western">양식</option>
+                </select>
+            </div>
+            
+            <div class="search-category">
+                <label for="certification">맛집 인증</label>
+                <select id="certification" name="certification">
+                    <option value="michelin">미쉐린</option>
+                    <option value="korean-certification">한국 맛집 인증</option>
+                    <option value="yelp">Yelp 인증</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="selected-tags">
+            <h5>선택된 태그</h5>
+            <h5 class="detail_search">상세 검색</h5>
+            <h5 class="sort-btn">정렬 하기</h5>
+            <div class="tag-list">
+                <span class="tag" data-tag="seoul">인천 <span class="close-btn">&times;</span></span>
+                <span class="tag" data-tag="korean">중식 <span class="close-btn">&times;</span></span>
+                <span class="tag" data-tag="michelin">코스요리 <span class="close-btn">&times;</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeButtons = document.querySelectorAll('.close-btn');
+        
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                // 클릭된 닫기 버튼의 부모인 태그(span) 제거
+                const tag = e.target.closest('.tag');
+                tag.remove();
+            });
+        });
+    });
+    </script>
+</body>
+</html>

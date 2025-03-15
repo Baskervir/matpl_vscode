@@ -1,0 +1,192 @@
+
+.searched_rst {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 360px;
+    margin-bottom: 50px;
+}
+
+.rst_content {
+    width: 700px;
+    height: 340px;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 10px;
+}
+
+.reservation_cal {
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+    background-color: rgb(255, 238, 183);
+    height: 100px;
+    grid-row: 2;
+    grid-column: 2;
+    border-radius: 15px;
+}
+
+.reservation_cal > p {
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.rst_content_header {
+    gap: 10px;
+    padding: 5px;
+    align-items: center;
+    margin-left: 25px;
+    display: flex;
+}
+
+.rst_content_header > h2 {
+    margin-right: 50px;
+}
+
+.rst_content_detail {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 35px;
+}
+
+.utl_tag {
+    display: flex;
+    gap: 20px;
+}
+
+
+.rst_content_header_dt {
+    display: flex;
+    gap: 10px
+}
+
+hr {
+    border: 3px solid rgba(165, 42, 42, 0.356);
+}
+
+/* Image CSS Section */
+
+.rst_img_section {
+    height: 450px;
+    width: 470px;
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: auto auto; 
+    gap: 10px;
+    margin: 10px 10px;
+}
+
+.main_img {
+    object-fit: contain;
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.sub_img_section {
+    width: 470px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub_img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.main_img {
+    border-radius: 15px;
+    width: 470px;
+    height: 280px;
+}
+
+.sub_img {
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+/* 상세 설정 페이지 */
+
+.detail_search_div {
+    width: 1220px;
+    min-height: 30px;
+    border-radius: 15px;
+    display: flex;
+    background-color: rgba(255, 195, 146, 0.253);
+    margin-bottom: 30px;
+}
+
+.selected_detail {
+    display: flex;
+    width: 1030px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ds_btns {
+    padding: 10px;
+    margin: 0;
+}
+
+/* Modal_CSS */
+
+.filter-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container > h1 {
+    text-align: center;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.lb-tag, .label_cate, .lb_city, .lb_dis {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.category-list, .certification-list {
+    display: flex;
+    gap: 10px;
+}
+
+.category, .certification {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #ffd753;
+    color: rgb(0, 0, 0);
+}
+
+.category.selected, .certification.selected {
+    background-color: #0056b3;
+}
+
+.submit-btn {
+    position: relative;
+}
+
+.submit {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+}

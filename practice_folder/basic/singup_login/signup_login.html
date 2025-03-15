@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 및 로그인</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            width: 600px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .signup, .login {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .signup {
+            background: #f9f9f9;
+            border-right: 1px solid #ddd;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .signup {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 회원가입 영역 -->
+        <div class="signup">
+            <h2>회원가입</h2>
+            <input type="text" placeholder="아이디">
+            <input type="password" placeholder="비밀번호">
+            <input type="password" placeholder="비밀번호 확인">
+            <input type="email" placeholder="이메일">
+            <button>회원가입</button>
+        </div>
+
+        <!-- 로그인 영역 -->
+        <div class="login">
+            <h2>로그인</h2>
+            <input type="text" placeholder="아이디">
+            <input type="password" placeholder="비밀번호">
+            <button>로그인</button>
+        </div>
+    </div>
+
+</body>
+</html>

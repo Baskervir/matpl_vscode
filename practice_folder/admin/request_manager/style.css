@@ -1,0 +1,38 @@
+.container {
+    width: 300px;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+    /* 전체 정렬 (세로 배치) */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 요소 간격 */
+}
+
+.restaurant_name, .admin_id {
+    display: flex;  
+    align-items: center; /* 세로 정렬 */
+    gap: 10px; /* p와 input 간격 */
+}
+
+p {
+    width: 120px; /* 라벨 너비 */
+    margin: 0; /* 기본 마진 제거 */
+}
+
+input {
+    flex: 1; /* 남은 공간 차지 */
+    padding: 5px;
+}
+
+button {
+    align-self: center; /* 버튼을 가운데 정렬 */
+    padding: 8px 15px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

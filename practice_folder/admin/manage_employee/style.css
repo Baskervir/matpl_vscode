@@ -1,0 +1,54 @@
+.container {
+    width: 970px;
+    height: 730px;
+    border: 0.5px solid black;
+    border-radius: 15px;
+}
+
+.card {
+    display: flex;
+    margin: 20px 5px;
+    background-color: rgb(255, 251, 243);
+    border-radius: 15px;
+    border: 0.5px solid blueviolet;
+}
+
+.card-info {
+    width: 900px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+}
+
+label {
+    margin-right: 0px;
+    font-size: 22px;
+    line-height: 2.7;
+    font-weight: 800;
+}
+
+p {
+    margin: auto 30px auto 5px;
+    font-size: 22px;
+    line-height: 0;
+    font-weight: 400;
+}
+
+.card-buttons {
+    display: flex;
+}
+
+.manage-btn {
+    font-size: 18px;
+    background-color: rgb(211, 211, 255);
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.cancel-btn {
+    font-weight: 700;
+    font-size: 18px;
+    background-color: rgb(253, 193, 193);
+    border-radius: 8px;
+}
+
