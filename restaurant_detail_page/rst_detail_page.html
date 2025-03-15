@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected_Restaurant_Pgae</title>
+    <link rel="stylesheet" href="/index/index.css">
+    <link rel="stylesheet" href="/detail/detail_page.css">
+    <link rel="stylesheet" href="/restaurant_detail_page/rst_detail_page.css">
+    <link rel="stylesheet" href="/restaurant_detail_page/calender.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="login_signup_text">
+                <button>회원가입 / 로그인</button>
+            </div>
+            <hr>
+            <div class="header_object">
+                <div class="main_logo">
+                    <p>MatPl<sub>ace</sub></p>
+                </div>
+                <div class="search_place">
+                    <input type="text" id="searchplace" placeholder="검색어를 입력하세요.">
+                </div>
+                <div class="search_button"><button>검색하기</button></div>
+            </div>
+        </div>
+
+        <div class="detail_search_div">
+            <div class="selected_detail">
+                선택된 상세 설정 표시 창
+            </div>
+            <div class="ds_btns">
+                <button class="open-modal">조건 설정</button>
+                <button>정렬 하기</button>
+            </div>
+        </div>
+        <div class="restaurant_page_select_tab">
+            <h2>홈</h2>
+            <h2>메뉴</h2>
+            <h2>리뷰<sub>(개수)</sub></h2>
+            <h2>사진<sub>(개수)</sub></h2>
+            <h2>지도</h2>
+        </div>
+
+        <div class="restaurant_page_container">
+            <div class="reservation_section">
+                <h1>예약하기</h1>
+                <div class="month">2025년 3월</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th>토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td class="today">16</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="reservation_section_commit">
+                    <div class="people_count_data">
+                        <h2>인원</h2>
+                        <input type="text" name="" id="people_count">
+                    </div>
+                    <div class="time_select_data">
+                        <h2>시간</h2>
+                        <select id="reservation_time" name="reservation_time">
+                            <option value="">시간</option>
+                            <option value="#">13:00</option>
+                            <option value="#">13:30</option>
+                            <option value="#">14:00</option>
+                            <option value="#">14:30</option>
+                            <option value="#">15:00</option>
+                            <option value="#">15:30</option>
+                            <option value="#">16:00</option>
+                            <option value="#">16:30</option>
+                            <option value="#">17:00</option>
+                            <option value="#">17:30</option>
+                            <option value="#">18:00</option>
+                            <option value="#">18:30</option>
+                            <option value="#">19:00</option>
+                            <option value="#">19:30</option>
+                            <option value="#">20:00</option>
+                            <option value="#">20:30</option>
+                            <option value="#">21:00</option>
+                        </select>
+                    </div>
+                    <button>예약 하기</button>
+                </div>
+            </div>
+            <div class="restaurant_detail_preview_body">
+                <div class="introduce_restaurant">
+                    <h2>희래등</h2>
+                    <hr>
+                    인천 서구 ... / 중식 코스요리 / 별점
+                </div>
+                <div class="info_of_restaurant">
+                    <h3>매장 정보</h3>
+                    <hr>
+                    <div class="restaurant_info_content">
+                        <h4>영업 시간</h4>
+                        <h5>OPEN 11:00 / Close 22:00</h5>
+                        <h5>Last-Order 21:00</h5>
+                    </div>
+                </div>
+                <div class="recent_reviews">
+                    <div class="recent_reviews_header">
+                        <h3>최근 리뷰</h3>
+                        <hr>
+                    </div>
+                    <div class="recent_reviews_cards">
+                        <div class="review_card">
+                            리뷰 카드1
+                        </div>
+                        <div class="review_card">
+                            리뷰 카드2
+                        </div>
+                        <div class="review_card">
+                            리뷰 카드3
+                        </div>
+                        <div class="review_card">
+                            리뷰 카드4
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>

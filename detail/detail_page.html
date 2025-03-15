@@ -13,7 +13,7 @@
     <div class="container">
         <div class="header">
             <div class="login_signup_text">
-                <button class="open-modal">회원가입 / 로그인</button>
+                <button>회원가입 / 로그인</button>
             </div>
             <hr>
             <div class="header_object">
@@ -32,7 +32,7 @@
                 선택된 상세 설정 표시 창
             </div>
             <div class="ds_btns">
-                <button>조건 설정</button>
+                <button class="open-modal">조건 설정</button>
                 <button>정렬 하기</button>
             </div>
         </div>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="rst_content">
-                    <div class="rst_content_header">
+                    <div class="rst_content_header" onclick="window.location.href='/restaurant_detail_page/rst_detail_page.html'">
                         <h2>희래등</h2>
                             <p>서구청역</p>
                             <p>/</p>
@@ -107,7 +107,7 @@
                     <hr>
                     <div class="rst_content_detail">
                         <h3>Restaurant's Comment</h3>
-                        <h2>⭐4.7(37)</h2>
+                        <h2>⭐평점(인원수)</h2>
                         <h4>**시 **구 **동 ....</h4>
                         <div class="utl_tag">
                             <p>편의시설1</p>
@@ -152,7 +152,7 @@
                     <hr>
                     <div class="rst_content_detail">
                         <h3>Restaurant's Comment</h3>
-                        <h2>⭐4.7(37)</h2>
+                        <h2>⭐평점(인원수)</h2>
                         <h4>**시 **구 **동 ....</h4>
                         <div class="utl_tag">
                             <p>편의시설1</p>
@@ -173,12 +173,14 @@
                 </div>
             </div>
 
-            <div class="filter-container">
+            <div class="modal_overlay"></div>
+
+            <div class="filter_container">
                 <h1>상세 조건</h1>
                 
                 <div class="filter-group">
                     <label class="lb_city" for="city">지역 선택</label>
-                    <select id="city" name="city" onchange="updateDistricts()">
+                    <select id="city" name="city" onchange="updateGu()">
                         <option value="">- 시 / 도 -</option>
                         <option value="seoul">서울</option>
                         <option value="gyeonggi">경기</option>
@@ -198,10 +200,10 @@
                         <option value="choongbuk">충북</option>
                         <option value="jeju">제주</option>
                     </select>
-                    <select id="district" name="district" onchange="updateNeighborhoods()" disabled>
+                    <select id="gu" name="gu" onchange="updateDong()" disabled>
                         <option value="">- 구 -</option>
                     </select>
-                    <select id="neighborhood" name="neighborhood" disabled>
+                    <select id="dong" name="dong" disabled>
                         <option value="">- 동 -</option>
                     </select>
                 </div>
@@ -209,7 +211,7 @@
                 <div class="filter-group">
                     <label class="lb_dis">거리 기준</label>
                     <div class="distance-list">
-                        <select id="city" name="city" onchange="updateDistricts()">
+                        <select id="city" name="city">
                         <option value="">거리 이내</option>
                         <option value="300m">300m 이내</option>
                         <option value="500m">500m 이내</option>

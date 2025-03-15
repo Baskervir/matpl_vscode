@@ -1,0 +1,41 @@
+.reservation_section {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+}
+
+.month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 14.2%;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #ffe159;
+    color: white;
+}
+
+td {
+    background: #fff;
+}
+
+td.today {
+    background: #ffcc00;
+    font-weight: bold;
+}
