@@ -1,0 +1,7 @@
+.detail_menu_page {
+    width: 880px;
+    height: 700px;
+    margin: 10px;
+    padding: 5px;
+    display: flexbox;
+}

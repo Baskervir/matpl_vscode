@@ -39,8 +39,8 @@
             </div>
         </div>
         <div class="restaurant_page_select_tab">
-            <h2>홈</h2>
-            <h2>메뉴</h2>
+            <h2 onclick="loadHmoe()">홈</h2>
+            <h2 onclick="loadMenu()">메뉴</h2>
             <h2>리뷰<sub>(개수)</sub></h2>
             <h2>사진<sub>(개수)</sub></h2>
             <h2>지도</h2>
@@ -143,9 +143,9 @@
             </div>
             <div class="restaurant_detail_preview_body">
                 <div class="introduce_restaurant">
-                    <h2>희래등</h2>
+                    <h1>희래등</h1>
                     <hr>
-                    인천 서구 ... / 중식 코스요리 / 별점
+                    <p>인천 서구 ... / 중식 코스요리 / 별점</p>
                 </div>
                 <div class="info_of_restaurant">
                     <h3>매장 정보</h3>
@@ -156,6 +156,12 @@
                         <h5>Last-Order 21:00</h5>
                     </div>
                 </div>
+                <div class="rep_menu">
+                    <h3>대표 메뉴</h3>
+                    <div class="rep_menu_detail">
+
+                    </div>
+                </div>
                 <div class="recent_reviews">
                     <div class="recent_reviews_header">
                         <h3>최근 리뷰</h3>
@@ -163,16 +169,57 @@
                     </div>
                     <div class="recent_reviews_cards">
                         <div class="review_card">
-                            리뷰 카드1
+                            <div class="reviews_user_info">
+                                <h2 class="user_profile_img">👤</h2>
+                                <div class="user_info_header">
+                                    <h3>Basic_user1</h3>
+                                    <div class="user_info_header_sub">
+                                        <p>평균 별점:⭐4.7</p>
+                                        <p>리뷰 수:13</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reviews_content">댓글내용</div>
                         </div>
                         <div class="review_card">
-                            리뷰 카드2
+                            <div class="reviews_user_info">
+                                <h2 class="user_profile_img">👤</h2>
+                                <div class="user_info_header">
+                                    <h3>user_name</h3>
+                                    <div class="user_info_header_sub">
+                                        <p>평균 별점:⭐4.7</p>
+                                        <p>리뷰 수:13</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews_content">댓글내용</div>
                         </div>
                         <div class="review_card">
-                            리뷰 카드3
+                            <div class="reviews_user_info">
+                                <h2 class="user_profile_img">👤</h2>
+                                <div class="user_info_header">
+                                    <h3>user_name</h3>
+                                    <div class="user_info_header_sub">
+                                        <p>평균 별점:⭐4.7</p>
+                                        <p>리뷰 수:13</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews_content">댓글내용</div>
                         </div>
                         <div class="review_card">
-                            리뷰 카드4
+                            <div class="reviews_user_info">
+                                <h2 class="user_profile_img">👤</h2>
+                                <div class="user_info_header">
+                                    <h3>user_name</h3>
+                                    <div class="user_info_header_sub">
+                                        <p>평균 별점:⭐4.7</p>
+                                        <p>리뷰 수:13</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews_content">댓글내용</div>
                         </div>
                     </div>
 
@@ -183,6 +230,7 @@
 
     </div>
     </div>
+    <script src="/restaurant_detail_page/rst_detail_page.js"></script>
 </body>
 
 </html>
